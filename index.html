@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="code.js"></script>
+<title>Evolving Lines</title>
+</head>
+<body>
+<canvas style="border: 1px solid black" id="canvas" width="500" height="500">
+</canvas><br />
+<input type="button" id="done" onclick="save_line()" value="Done Drawing" disabled="true" />
+<input type="button" id="mode" onclick="swap_mode()" value="Mode: Drawing" />
+<input type="button" id="show" onclick="show_lines()" value="Show Lines" />
+<input type="button" id="hide" onclick="hide_lines()" value="Hide Lines" /><br />
+<input type="button" id="parent" onclick="parent_node()" value="Go to Parent" disabled="true" />
+<input type="button" id="left" onclick="left_node()" value="Go to Left" disabled="true" />
+<input type="button" id="right" onclick="right_node()" value="Go to Right" disabled="true" />
+<input type="button" id="start" onclick="start_animation()" value="Start Animation" />
+<input type="button" id="stop" onclick="stop_animation()" value="Stop Animation" disabled="true"/>
+<div id="lines">
+</div>
+<canvas onclick="draw_tree()" style="border: 1px solid black" id="tree" width="750" height="500">
+</canvas>
+</div>
+</body>
+</html>
